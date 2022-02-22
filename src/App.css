@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+.App {
+  box-sizing: border-box;
+  font-family: 'Roboto', serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.new-line {
+  white-space: pre-line;
+}
