@@ -40,7 +40,7 @@ function App() {
   const [darkMode, setDarkmode] = useState(false)
 
   useEffect(() => {
-    axios.get('/read').then((response) =>{
+    axios.get('https://etonote.herokuapp.com/read').then((response) =>{
       setNotes(response.data)
       
     })
