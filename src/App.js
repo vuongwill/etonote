@@ -47,7 +47,7 @@ function App() {
   }, [loading, editLoading, deleteLoading])
 
   const addToList = async () => {
-    axios.post('/insert', {
+    axios.post('https://etonote.herokuapp.com/insert', {
       title: title, 
       noted: noted})
       setLoading(true)
@@ -58,7 +58,7 @@ function App() {
   }
 
   const updateNote = async (id) => {
-    axios.put('/update',
+    axios.put('https://etonote.herokuapp.com/update',
       {
         id: id, 
         newNote: newNote,
@@ -70,7 +70,7 @@ function App() {
   }
 
   const deleteNote = (id) => {
-    axios.delete(`/delete/${id}`, {
+    axios.delete(`https://etonote.herokuapp.com/delete/${id}`, {
       id: id, 
       newNote: newNote,
     })
