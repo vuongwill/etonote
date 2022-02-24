@@ -140,7 +140,7 @@ function App() {
       </Stack>
       <div>
       <Grid
-          sx={{px: 1}}
+          sx={{p: 1}}
           container
           spacing={2}
           direction='row'
